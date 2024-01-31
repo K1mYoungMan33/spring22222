@@ -6,7 +6,7 @@ import lombok.*;
 @Entity
 @Setter @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@ToString(of = {"id","username","age"})
+@ToString(of = {"id","username","age","team"})
 public class Member3 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
