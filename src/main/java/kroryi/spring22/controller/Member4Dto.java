@@ -19,14 +19,14 @@ public class Member4Dto implements Serializable {
     Long id;
     String username;
     int age;
-    Team3 team;
+//    Team3 team;
     Set<RoleType> roles;
 
     public Member4Dto(Member3 member3, Long id, String username, int age, Team3 team, Set<RoleType> roles) {
         this.id = id;
         this.username = username;
         this.age = age;
-        this.team = team;
+//        this.team = team;
         this.roles = roles;
     }
 
@@ -34,7 +34,7 @@ public class Member4Dto implements Serializable {
         id = member3.getId();
         username = member3.getUsername();
         age = member3.getAge();
-        team = member3.getTeam();
+//        team = member3.getTeam();
         roles = new HashSet<>();
     }
 
@@ -42,7 +42,7 @@ public class Member4Dto implements Serializable {
         id = member3.getId();
         username = member3.getUsername();
         age = member3.getAge();
-        team = member3.getTeam();
+//        team = member3.getTeam();
         roles = member3.getRoles();
     }
 }

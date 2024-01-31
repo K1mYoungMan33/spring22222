@@ -1,5 +1,6 @@
 package kroryi.spring22.controller;
 
+import kroryi.spring22.dto.Member3Dto;
 import kroryi.spring22.entity3.Member3;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -19,7 +20,8 @@ public class MemberController {
     MemberServiceImpl memberService;
 
     @GetMapping("/list")
-    public List<Member3> member_list(@RequestParam(value = "page") int pageNo ){
+//    public Page<Member3Dto> member_list(@RequestParam(value = "page") int pageNo ){
+    public Page<Member4Dto> member_list(@RequestParam(value = "page") int pageNo ){
 
 //        return memberService.getMemberList( pageNo, 5 );
         return memberService.getMemberList( pageNo, 5 );
