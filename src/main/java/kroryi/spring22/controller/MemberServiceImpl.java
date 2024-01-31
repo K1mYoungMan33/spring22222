@@ -1,20 +1,15 @@
 package kroryi.spring22.controller;
 
-import kroryi.spring22.dto.Member3Dto;
-import kroryi.spring22.entity3.Member3;
-import kroryi.spring22.repository.Member3Repository;
-import kroryi.spring22.repository.MemberRepository;
+import kroryi.spring22.repository.Member4Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class MemberServiceImpl {
 
     @Autowired
-    MemberRepository memberRepository;
+    Member4Repository memberRepository;
 //    Page<Member4Dto> getMemberList(int pageNo, String criteria, String sort, int pageSize_ ){
     Page<Member4Dto> getMemberList(int pageNo, int pageSize_ ){
         int pageSize = ( pageSize_ < 1 ? 5 : pageSize_ );
